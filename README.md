@@ -2,20 +2,17 @@
 
 ![](docker-handbook-preview.png)
 
-The concept of containerization itself is pretty old, but the emergence of the [Docker Engine](https://docs.docker.com/get-started/overview/#docker-engine) in 2013 has made it much easier to containerize your applications.
+The concept of containerization itself dates back to the nineties with the development of [`cgroups`](https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v1/cgroups.html) in Unix, which Google put to use in scale in the early two thousands.
 
-According to the [Stack Overflow Developer Survey - 2020](https://insights.stackoverflow.com/survey/2020#overview), [Docker](https://docker.com/) is the [\#1 most wanted platform](https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-platforms-wanted5), [\#2 most loved platform](https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-platforms-loved5), and also the [\#3 most popular platform](https://insights.stackoverflow.com/survey/2020#technology-platforms).
+In 2008 `cgroups` got merged into the Linux kernel and paved the way for the development of [Linux Containers (LXC)](https://linuxcontainers.org/) in the same year. LXC allowed users to create isolated environments called containers for running multiple applications by utilizing kernel features like the aforementioned `cgroups` and namespaces.
 
-As in-demand as it may be, getting started can seem a bit intimidating at first. So in this article, we'll be learning everything from basic to intermediate level of containerization. After going through the entire article, you should be able to:
+First introduced in 2013 The [Docker Engine](https://docs.docker.com/get-started/overview/#docker-engine) made it easier to create and run Linux Containers by utilizing LXC but quickly came up with [`libcontainer`](https://github.com/opencontainers/runc/blob/main/libcontainer/README.md) their own execution enginne.
 
-* Containerize \(almost\) any application
-* Upload custom Docker Images to online registries
-* Work with multiple containers using Docker Compose
+As popular as it may be, getting started with Docker can seem a bit intimidating at first. So in this free full-length book, you'll learn everything from basic to intermediate ideas of containerization using Docker.
 
 ## Prerequisites
 
 * Familiarity with the Linux Terminal
-* Familiarity with JavaScript \(some later projects use JavaScript\)
 
 ## Project Code
 
@@ -23,11 +20,11 @@ Code for the example projects can be found in the following repository:
 
 [https://github.com/fhsinchy/docker-handbook-projects/](https://github.com/fhsinchy/docker-handbook-projects/)
 
-You can find the complete code in the [completed](https://github.com/fhsinchy/docker-handbook-projects/tree/completed) branch.
+There are two directories in the `master` branch. The `starter` directory contains the project codes without any containerization applied and the `containerized` directory contains the project cods alongside necessary instructions for containerization.
 
 ## Contributions
 
-This article is completely open-source and quality contributions are more than welcomed. You can find the full content in the following repository:
+This book is completely open-source and quality contributions are more than welcomed. You can find the full content in the following repository:
 
 [https://github.com/fhsinchy/the-docker-handbook](https://github.com/fhsinchy/the-docker-handbook)
 
@@ -39,7 +36,7 @@ If you're looking for the complete and stable version of the article then freeCo
 
 [https://www.freecodecamp.org/news/the-docker-handbook/](https://www.freecodecamp.org/news/the-docker-handbook/)
 
-Which ever version of the article you end up reading though, don't forget to let me know your opinion. Constructive criticism is always welcomed.
+Which ever version of the article you end up reading though, don't forget to let me know your opinion.
 
 ## Awesome Contributors
 
